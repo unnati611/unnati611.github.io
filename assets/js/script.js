@@ -43,11 +43,13 @@ $(document).ready(function () {
   // <!-- emailjs to mail contact form data -->
   $("#contact-form").submit(function (event) {
     emailjs.init("P9u52KBuNn_YTWmja");
+    debugger;
 
     emailjs
       .sendForm("service_x1h0ikd", "template_frnhd7l", "#contact-form")
       .then(
         function (response) {
+          debugger;
           console.log("SUCCESS!", response.status, response.text);
           document.getElementById("contact-form").reset();
           alert("Form Submitted Successfully");
