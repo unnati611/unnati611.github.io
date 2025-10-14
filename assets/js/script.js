@@ -67,7 +67,7 @@ $(document).ready(function () {
 document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "visible") {
     document.title = "Portfolio | Unnati Shah";
-    $("#favicon").attr("href", "assets/images/unnatiprofile.jpeg");
+    $("#favicon").attr("href", "assets/images/unnatiprofile.png");
   } else {
     document.title = "Come Back To Portfolio";
     $("#favicon").attr("href", "assets/images/favhand.png");
@@ -217,6 +217,8 @@ srtop.reveal(".skills .container .bar", { delay: 400 });
 
 /* SCROLL EDUCATION */
 srtop.reveal(".education .box", { interval: 200 });
+/* SCROLL EXPERIENCE */
+srtop.reveal(".experience-card", { interval: 200 });
 
 /* SCROLL PROJECTS */
 srtop.reveal(".work .box", { interval: 200 });

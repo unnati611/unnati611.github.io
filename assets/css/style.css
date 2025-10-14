@@ -90,6 +90,7 @@ section {
   font-size: 3.5rem;
   color: rgb(32, 32, 32);
   font-weight: 800;
+  margin-bottom: "10px";
   text-align: center;
 }
 
@@ -1160,6 +1161,51 @@ form .button-area {
   font-size: 1.5rem;
   animation: pound 0.35s infinite alternate;
 }
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  padding: 1rem 0;
+}
+
+.experience-card {
+  background: #FFFFFF;
+  padding: 2.5rem;
+  border-left: 4px solid #F07A39;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.experience-card h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1.9rem;
+  /* color: #333; */
+}
+
+.company {
+  font-weight: 600;
+  font-size: 1.6rem;
+  /* color: #555; */
+}
+
+.date {
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card ul {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-left: 1.3rem;
+  list-style-type: disc;
+  /* color: #444; */
+}
+
+
 
 @-webkit-keyframes pound {
   to {
